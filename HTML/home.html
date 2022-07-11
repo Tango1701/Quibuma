@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../View/JS/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../View/JS/bootstrap-5.0.0-beta1-dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../View/JS/fontawesome-free-5.15.1-web/css/all.css">
+    <script src="../View/JS/bootstrap-5.0.0-beta1-dist/js/bootstrap.bundle.js"></script>
+    <script src="../View/JS/bootstrap-5.0.0-beta1"></script>
+    <script src="../View/JS/homeflow.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="conta.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cHome.css">
+    <link rel="stylesheet" href="home_mobile.css">
+    <link rel="stylesheet" href="sliderBack.css">
+    <title>Quibuma Gym</title>
+</head>
+<body onload="showPanel(0)">
+    
+    <div class="fundo">
+
+        <div class="slidershow middle">
+
+            <div class="slides">
+
+
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+
+                <div class="slide s1">
+                    <img src="../View/IMG/levantandopesos.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../View/IMG/gymhulk.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../View/IMG/Pesos.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../View/IMG/mulhernotelefone.jpg" alt="">
+                </div>
+            
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar" onclick="showPanel(0)"></label>
+                <label for="r2" class="bar" onclick="showPanel(1)"></label>
+                <label for="r3" class="bar" onclick="showPanel(2)"></label>
+                <label for="r4" class="bar" onclick="showPanel(3)"></label>
+            </div>
+
+            <ul class="navigation" style="padding: 0; margin-left: 25px; margin-top: -2px;">
+                    <label for="r1" onclick="showPanel(0)">Venha ficar Fit</label>
+                    <label for="r2" onclick="showPanel(1)">Conheça o seu Corpo</label>
+                    <label for="r3" onclick="showPanel(2)">Materiais de Qualidade</label>
+                    <label for="r4" onclick="showPanel(3)">Inscreva-se!</label>
+            </ul>
+
+        </div>
+        <div class="overlay"></div>
+
+        <ul class="menu">
+           <li onclick="troca(0)"> <i class="fa fa-home"></i> Página Inicial</li>
+           <li onclick="troca(1)"> <i class="fa fa-running"></i> Treino</li>
+           <li class="conta"> <i class="fa fa-lock"></i> Conta <i class="fa fa-arrow-circle-down i"></i>
+                <ul class="submenu">
+                    <li onclick="troca(2)"><i class="fa fa-key"></i>  Iniciar Sessão</li>
+                    <li onclick="troca(3)"><i class="fa fa-user"></i>  Criar Conta</li>
+                </ul>
+            </li>
+           <li onclick="troca(4)"> <i class="fa fa-info"></i> Informações </li>
+        </ul>
+
+        <div class="mm" id="conteudo">
+
+            <div class="cHome">
+
+                <p>Venha ficar em forma no nosso ginásio 
+                    e desfrute da companhia de outros membros
+                    enquanto trabalha o seu corpo.
+                </p>
+
+                <button id="regbtn"> <i class="fa fa-user"></i> Inscrever-se</button>
+
+            </div>
+            <div class="cHome">
+
+                <p>Conheça o seu corpo treinando com profissionais
+                    de saúde e estética, e teste os seus limites!
+                </p>
+
+                <button id="regbtn"> <i class="fa fa-user"></i> Inscrever-se</button>               
+
+            </div>
+            <div class="cHome">
+
+                <p>Use materiais de qualidade durante o seu treino
+                    para melhorar as suas chances de ficar em forma
+                    mais rápido.
+                </p>
+
+                <button id="regbtn"> <i class="fa fa-user"></i> Inscrever-se</button>                
+
+            </div>
+            <div class="cHome">
+
+                <p style="text-align: left;">Crie a sua conta a partir daqui e usufrua de
+                    todos os serviços que tem á sua disponibilidade!
+                </p>
+
+                <button id="regbtn"> <i class="fa fa-user"></i> Inscrever-se</button>
+                <button id="logbtn"> <i class="fa fa-key"></i> Iniciar Sessão</button>
+
+            </div>
+
+        </div>
+        <div class="mm" id="servicos"></div>
+        <div class="mm" id="login">
+            <form action="" method="post" class="login">
+                <div class="barralateral"></div>
+                <div class="lgcontent">
+                    <br>
+                        <h2>Iniciar Sessão</h2> <br> 
+
+                        <div class="form">
+                                <input type="email" name="userN" autocomplete="off" required> 
+                                <label for="userN" class="lbl-name">
+                                    <span class="content-name">Email</span>
+                                </label> 
+                        </div> <br> 
+                        <div class="form">
+                                    <input type="password" name="passW" autocomplete="off" required> 
+                                    <label for="passW" class="lbl-name">
+                                        <span class="content-name">Palavra Passe</span>
+                                    </label> <br>
+                        </div> <br> <br>
+        
+                        <button id="btnLogin" type="submit"> Entrar <i class="fa fa-arrow-right i"></i></button>
+                </div>
+
+
+            </form>
+        </div>
+        <div class="mm" id="account">
+            <div class="topo">
+                <h3>Inscrição</h3>
+                <p>Preencha os formulários e clique em inscrever-se</p>
+                <button type="submit"><i class="fa fa-save"></i> Inscrever-se </button>
+            </div>
+            <div class="baixo">
+                    <div class="dadospessoais">
+                        <h4> Dados Pessoais <i class="fa fa-user" style="color: rgb(150, 0, 0);"></i></h4>
+                        <div id="form">
+                            <input type="text" name="userN" autocomplete="off" required> 
+                            <label for="userN" id="lbl-name">
+                            <span id="content-name">Nome Completo</span>
+                            </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="date" style="font-size: 15px;" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name"></span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                            <select name="" id="" required> 
+                                <option value="">Sexo</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </select>
+                        </div>
+                        <div id="form">
+                                <input type="text" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Bilhete de Identidade</span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="number" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Numero de Telefone</span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="text" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Morada </span>
+                                </label> 
+                        </div> <br>
+                        
+                    </div>
+                    <div class="dadosmedicos">
+                        <h4> Dados Medicos <i class="fa fa-notes-medical" style="color: rgb(150, 0, 0);"></i></h4>
+                        <br>
+                        <label id="p1">É portador de alguma patologia?</label> 
+                        <label for="">Sim</label>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Não</label>
+                        <input type="checkbox" name="" id=""> <br>
+                        <label id="p1">Patologia</label> 
+                        <input type="text" name="" id="pat"> <br>
+                        <label id="p1">Grupo Sanguinio</label>
+                        <input type="text" name="" id="gs">
+                        <label id="p1">Seguro de Saude</label>
+                        <input type="text" name="" id="gs"> <br> <br>
+                        <label id="p1">Já  sofreu alguma intervenção cirúrgica?</label> <br>
+                        <label id="p1">Sim</label>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Não</label>
+                        <input type="checkbox" name="" id=""> <br> 
+                        <label id="p1">Data da Cirurgia</label>
+                        <input type="date" id="txtData" name="userN" autocomplete="off" required> 
+                        <label id="p1">Motivo da Cirurgia </label> <br>
+                        <input type="text" name="" id="richTextbox" placeholder="Max. 30 palavras">
+
+                    </div>
+                    <div class="dadosacesso">
+                        <h4> Dados de Acesso <i class="fa fa-lock" style="color: rgb(150, 0, 0);"></i></h4>
+                        <div id="form">
+                                <input type="text" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Email</span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="password" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Crie uma Palavra-passe</span>
+                                </label> 
+                        </div>
+                        <div id="form">
+                                <input type="password" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Repita a Palavra-passe</span>
+                                </label> 
+                        </div>
+                        <h4> Forma de pagamento <i class="fa fa-dollar-sign" style="color: rgb(150, 0, 0);"></i></h4>
+                        <p>Faça um depósito ou uma transferência bancária
+                                e depois carregue o comprovativo aqui.
+                                Assim que for verificado, receberá um email de 
+                                confirmação. 
+                                Formatos aceites: JPG. JPEG, PNG (imagem)
+                                PDF (Documento)
+                        </p>
+
+                        <input type="file" name="" 
+                        style="margin-left: 3%; border: none; color: rgb(150, 0, 0);
+                        background-color: white; outline: none;" >
+                    </div>
+            </div>
+            
+        </div>
+        <div class="mm" id="info"></div>
+
+        <div class="brain">
+            Desenvolvido por: Brain Developer 924377250 
+           
+        </div>
+    </div>
+
+    <div class="fundo_mobile">
+
+		<div class="menu_bar">
+			<div class="logo">Quibuma Gym</div>
+			<div class="opcoes">
+                <img src="../View/IMG/Add User Male_104px.png" onclick="trocaMobile(3)">
+                <img src="../View/IMG/Info_104px.png">
+			</div>
+		</div>
+		
+        
+		<div id="parallax" class="mp">
+				<div class="overlay1"></div>
+				<div class="conteudo">
+						<h1>Venha Ficar fit</h1>
+						<p>
+								Venha ficar em forma no nosso ginásio 
+								e desfrute da companhia de outros membros
+								enquanto trabalha o seu corpo.
+						</p>
+						<button>Inscreva-se <i class="fa fa-user"></i> </button>
+				</div>
+				
+		</div>
+			
+		
+		<!-- <container>
+				<div class="parallax1">
+					<div class="overlay1"></div>
+					
+					<div class="conteudo">
+						<h1>Conheça o seu Corpo!</h1>
+						<p>
+								Venha ficar em forma no nosso ginásio 
+								e desfrute da companhia de outros membros
+								enquanto trabalha o seu corpo.
+						</p>
+						<button>Inscreva-se <i class="fa fa-user"></i> </button>
+				</div>
+				</div>
+						
+		</container>
+		<container>
+				<div class="parallax2">
+					<div class="overlay1"></div>
+					<div class="conteudo">
+							<h1>Materiais de Qualidade</h1>
+							<p>
+									Venha ficar em forma no nosso ginásio 
+									e desfrute da companhia de outros membros
+									enquanto trabalha o seu corpo.
+							</p>
+							<button>Inscreva-se <i class="fa fa-user"></i> </button>
+						</div>
+				</div>
+		</container>
+		<container>
+				<div class="parallax3">
+					<div class="overlay1"></div>
+					<div class="conteudo">
+							<h1>Inscreva-se!</h1>
+							<p>
+									Venha ficar em forma no nosso ginásio 
+									e desfrute da companhia de outros membros
+									enquanto trabalha o seu corpo.
+							</p>
+							<button>Inscreva-se <i class="fa fa-user"></i> </button>
+						</div>
+				</div>
+		</container> -->
+
+        <div class="menu">
+            <div class="btnHome" onclick="trocaMobile(0)">
+                <img src="../View/IMG/Home_96px.png">
+            </div>
+            <div class="btnServicos" onclick="trocaMobile(1)">
+                <img src="../View/IMG/Barbell_96px.png">
+            </div>
+            <div class="btnLogin" onclick="trocaMobile(2)">
+                <img src="../View/IMG/User Male_104px.png">
+            </div>
+            <div class="btnChat" onclick="maximiza()">
+                    <img src="../View/IMG/Chat_96px.png">
+            </div>
+        </div>
+		
+        <div class="ChatBox" id="ChatBox">
+            <div class="topbar">
+                Fale conosco!
+                <div class="close" onclick="minimiza()">
+                    <img src="../View/IMG/Close Window_96px.png" alt="">
+                </div>
+            </div>
+            <div class="textfield"></div>
+            <div class="typebar">
+                <input type="text" placeholder="Digite a mensagem..." autocomplete="off">
+                <img src="../View/IMG/Paper Plane_104px.png">
+            </div>
+        </div>
+        <div class="mp" id="treino">
+            <div class="overlay1"></div>
+        </div>
+        <div class="mp" id="Login">
+            <div class="overlay1"></div>
+            <form action="" method="post" class="login">
+                <div class="barralateral"></div>
+                <div class="lgcontent">
+                <br>
+                 <h2>Iniciar Sessão</h2>  <br> 
+        
+                 <div class="form">
+             <input type="email" name="userN" autocomplete="off" required> 
+                <label for="userN" class="lbl-name">
+                 <span class="content-name">Email</span>
+               </label> 
+              </div> <br> 
+               <div class="form">
+               <input type="password" name="passW" autocomplete="off" required> 
+                <label for="passW" class="lbl-name">
+                <span class="content-name">Palavra Passe</span>
+                </label> <br>
+                </div> <br> <br>
+                
+               <button id="btnLogin" type="submit"> Entrar <i class="fa fa-arrow-right i"></i></button>
+            </div>
+        
+        
+            </form>
+        </div>
+        <div class="mp" id="Conta">
+            <div class="overlay1"></div>
+            <div class="topo">
+                <h3>Inscrição</h3>
+            </div>
+            <div class="baixo1">
+                    <div class="dadospessoais">
+                        <h4> Dados Pessoais <i class="fa fa-user" style="color: rgb(150, 0, 0);"></i></h4>
+                        <div id="form">
+                            <input type="text" name="userN" autocomplete="off" required> 
+                            <label for="userN" id="lbl-name">
+                            <span id="content-name">Nome Completo</span>
+                            </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="date" style="font-size: 15px;" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name"></span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                            <select name="" id="" required> 
+                                <option value="">Sexo</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </select>
+                        </div>
+                        <div id="form">
+                                <input type="text" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Bilhete de Identidade</span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="number" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Numero de Telefone</span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="text" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Morada </span>
+                                </label> 
+                        </div> <br>
+                        <label>Fotografia</label> <br>
+                        <input type="file" name="" id="">
+                        
+                    </div>
+                    <div class="dadosmedicos">
+                        <h4> Dados Medicos <i class="fa fa-notes-medical" style="color: rgb(150, 0, 0);"></i></h4>
+                        <br>
+                        <label id="p1">É portador de alguma patologia?</label> <br> 
+                        <label id="p1">Sim</label>
+                        <input type="checkbox" name="" id="">
+                        <label id="p1">Não</label>
+                        <input type="checkbox" name="" id=""> <br> <br>
+
+                        <label id="p1">Patologia</label> <br>
+                        <input type="text" name="" id="pat"> <br> <br>
+
+                        <label id="p1">Grupo Sanguinio</label> <br>
+                        <input type="text" name="" id="gs"> <br> <br>
+
+                        <label id="p1">Seguro de Saude</label> <br>
+                        <input type="text" name="" id="gs"> <br> <br>
+
+                        <label id="p1">Já  sofreu alguma intervenção cirúrgica?</label> <br>
+                        <label id="p1">Sim</label>
+                        <input type="checkbox" name="" id="">
+                        <label id="p1">Não</label>
+                        <input type="checkbox" name="" id=""> <br> <br>
+
+                        <label id="p1">Data da Cirurgia</label> <br>
+                        <input type="date" id="txtData" name="userN" autocomplete="off" required>  <br> <br>
+                        
+                        <label id="p1">Motivo da Cirurgia </label> <br>
+                        <textarea id="richTextbox" cols="30" rows="10" placeholder="Maximo 30 palavras"></textarea>
+                    </div>
+                    <div class="dadosacesso">
+                        <h4> Dados de Acesso <i class="fa fa-lock" style="color: rgb(150, 0, 0);"></i></h4>
+                        <div id="form">
+                                <input type="text" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Email</span>
+                                </label> 
+                        </div> 
+                        <div id="form">
+                                <input type="password" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Crie uma Palavra-passe</span>
+                                </label> 
+                        </div>
+                        <div id="form">
+                                <input type="password" name="userN" autocomplete="off" required> 
+                                <label for="userN" id="lbl-name">
+                                <span id="content-name">Repita a Palavra-passe</span>
+                                </label> 
+                        </div>
+                        <br>
+                        <h4> Forma de pagamento <i class="fa fa-dollar-sign" style="color: rgb(150, 0, 0);"></i></h4>
+                        <p>Faça um depósito ou uma transferência bancária
+                                e depois carregue o comprovativo aqui.
+                                Assim que for verificado, receberá um email de 
+                                confirmação. 
+                                Formatos aceites: JPG. JPEG, PNG (imagem)
+                                PDF (Documento)
+                        </p>
+
+                        <input type="file" name="" 
+                        style="margin-left: 3%; border: none; color: rgb(150, 0, 0);
+                        background-color: white; outline: none;" >
+                    </div>
+
+                    <div class="topo2">
+                        <button type="submit"><i class="fa fa-save"></i> Inscrever-se </button>
+                    </div>
+
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

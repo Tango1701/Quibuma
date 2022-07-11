@@ -1,0 +1,48 @@
+.back{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+.back img{
+    height: 100%;
+    width: 100%;
+}
+#socios{
+    width: 90%;
+    height: 550px;
+    left: 4%;
+    top: 12%;
+    z-index: 4;
+    background-color: orangered;
+    position: absolute; 
+}
+#solicitacoes{
+    width: 90%;
+    height: 550px;
+    left: 4%;
+    top: 12%;
+    z-index: 4;
+    background-color: orange;
+    position: absolute; 
+}
+#funcionarios{
+    width: 90%;
+    height: 550px;
+    left: 4%;
+    top: 12%;
+    z-index: 4;
+    position: absolute; 
+    background-color: white;
+    display: none;
+}
+#financas{
+    width: 90%;
+    height: 550px;
+    left: 4%;
+    top: 12%;
+    z-index: 4;
+    position: absolute; 
+    background-color: green;
+    display: none;
+}

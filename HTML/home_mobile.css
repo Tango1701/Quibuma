@@ -1,0 +1,474 @@
+@media screen and (max-width:827px) and (max-height:1772px)
+{
+    .fundo{
+        display: none;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+        text-align: justify;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 15%;
+    }
+    .fundo_mobile{
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        position: absolute;
+        display: block;
+    }
+    .conteudo{
+        height: 400px;
+        width: 100%;
+        margin-top: 150px;
+        position: absolute;
+        bottom: 100px;
+    }
+    .conteudo button{
+        height: 40px;
+        width: 130px;
+        color: white;
+        background-color: rgb(150, 0, 0);
+        border: none;
+        outline: none;
+        margin-top: 10%;
+    }
+    #parallax{
+        background: url(../View/IMG/levantandopesos.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    /* .parallax1{
+        margin-top: 50px;
+        background: url(../View/IMG/gymhulk.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 700;
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    .parallax2{
+        margin-top: 50px;
+        background: url(../View/IMG/Pesos.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 700px;
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    .parallax3{
+        margin-top: 50px;
+        background: url(../View/IMG/mulhernotelefone.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 700px;
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    } */
+    .overlay1{
+        z-index: -1;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        display: block;
+        position: absolute;
+    }
+    .menu_bar{
+        height: 40px;
+        width: 100%;
+        border: 1px solid white;
+        top: 0;
+        z-index: 3;
+        display: flex;
+        color: rgb(150, 0, 0);
+        font-weight: bold;
+        position: fixed;
+        background-color: white;
+    }
+    .menu{
+        height: 50px;
+        width: 70%;
+        top: 90%;
+        left: 15%;
+        z-index: 6;
+        color: rgb(150, 0, 0);
+        font-weight: bold;
+        position: absolute;
+    }
+    .menu div{
+        margin-left: 50px;
+    }
+    .opcoes{
+        width: 30px;
+        margin-left: 40%;
+        margin-top: 1%;
+        height: 80%;
+        display: flex;
+    }
+    .opcoes img{
+        height: 100%;
+        width: 100%;
+        margin-left: 15%;
+    }
+    .logo{
+       left: 0;
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .btnHome{
+        position: fixed;
+        z-index: 5;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 20px black;
+        background-color: rgb(150, 0, 0);
+        bottom: 30px;
+        text-align: center;
+        left: 0%;
+    }
+    .btnHome img{
+        height: 60%;
+        width: 60%;
+        margin-top: 20%;
+    }
+    .btnServicos{
+        position: fixed;
+        z-index: 5;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 20px black;
+        background-color: rgb(150, 0, 0);
+        bottom: 30px;
+        left: 20%;
+        text-align: center;
+    }
+    .btnServicos img{
+        height: 60%;
+        width: 60%;
+        margin-top: 20%;
+    }
+    .btnLogin{
+        position: fixed;
+        z-index: 5;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 20px black;
+        background-color: rgb(150, 0, 0);
+        bottom: 30px;
+        left: 40%;
+        text-align: center;
+    }
+    .btnLogin img{
+        height: 60%;
+        width: 60%;
+        margin-top: 20%;
+    }
+    .btnConta{
+        position: fixed;
+        z-index: 5;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 20px black;
+        background-color: rgb(150, 0, 0);
+        bottom: 30px;
+        left: 60%;
+        text-align: center;
+    }
+    .btnConta img{
+        height: 60%;
+        width: 60%;
+        margin-top: 20%;
+    }
+    .btnChat{
+        position: fixed;
+        z-index: 5;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 20px black;
+        background-color: rgb(150, 0, 0);
+        bottom: 30px;
+        left: 60%;
+        text-align: center;
+    }
+    .btnChat img{
+        height: 60%;
+        width: 60%;
+        margin-top: 20%;
+    }
+    #ChatBox{
+        position: absolute;
+        z-index: 7;
+        height: 50%;
+        width: 90%;
+        background-color: white;
+        top: 200px;
+        left: 5%;
+        display: none;
+    }
+    .topbar{
+        height: 10%;
+        width: 100%;
+        background-color: rgb(150, 0, 0);
+        margin: 0;
+        border: none;
+        display: flex;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 2%;
+    }
+    .close{
+        margin-left: 50%;
+        margin-top: -1%;
+        height: 100%;
+        width: 30px;
+    }
+    .close img{
+        height: 100%;
+        width: 100%;
+    }
+    .textfield{
+        height: 75%;
+        width: 100%;
+        overflow: scroll;   
+    }
+    .typebar{
+        height: 15%;
+        width: 100%;
+        border-top: 1px solid rgb(150, 0, 0);
+        display: flex;
+    }
+    .typebar input{
+        height: 70%;
+        width: 80%;
+        margin: 2%;
+        outline: none;
+        padding-left: 1%;
+    }
+    .typebar img{
+        height: 60%;
+        width: 10%;
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+    #treino{
+        height: 100vh;
+        width: 100%;
+        margin-top: 100px;
+        position: relative;
+        bottom: 100px;
+        background: url(../View/IMG/gymhulk.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 2;
+        display: none;
+    }
+    #Login{
+        height: 100vh;
+        width: 100%;
+        margin-top: 100px;
+        position: relative;
+        bottom: 100px;
+        background: url(../View/IMG/Pesos.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 2;
+        display: none;
+    }
+    #Login .login{
+        height: 55%;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 40%;
+        bottom: 30%;
+        box-shadow: 0 0 10px 0 black;
+        border-radius: 2%;
+        display: flex;
+        border-left: 5px solid rgb(150, 0, 0);
+        position: absolute;
+    }
+    #Conta{
+        height: 2100px;
+        width: 100vw;
+        margin-top: 100px;
+        padding-top: 10%;
+        position: relative;
+        bottom: 100px;
+        background: url(../View/IMG/mulhernotelefone.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 2;
+        display: none;
+        font-family: 'Franklin Gothic Book';
+    }
+    /* Formulario de Registro */
+    .baixo1{
+        height: 90%;
+        width: 100%;
+        display: grid;
+    }
+    .topo{
+        height: 2%;
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+        background-color: white;
+    }
+    .topo h3{
+        color: rgb(150, 0, 0);
+        font-weight: bold;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    .topo p{
+        font-size: 20px;
+        margin-left: 3%;
+        color: white;
+    }
+    .baixo1 button{
+        background-color: rgb(150, 0, 0);
+        height: 35px;
+        width: 150px;
+        border: none;
+        outline: none;
+        margin-left: 83%;
+        margin-top: -60px;
+        color: white;
+        border-radius: 3%;
+        position: absolute;
+        text-align: center;
+    }
+    .dadospessoais{
+        height: 100%;
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+        border: 1px solid rgb(192, 192, 192);
+        box-shadow: 0 0 1px 0 black;
+        background-color: white;
+    }
+    
+    h4{
+        color: rgb(150, 0, 0);
+        font-weight: bolder;
+        margin: 3%;
+    }
+    #p1{
+        color: black; 
+        font-size: 18px;
+        margin-left: 3%;
+    }
+    .dadosmedicos{
+        height: 100%;
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 5%;
+        border: 1px solid rgb(192, 192, 192);
+        box-shadow: 0 0 1px 0 black;
+        background-color: white;
+    }
+    .dadosmedicos #pat{
+        width: 90%;
+        height: 35px;
+        color: black;
+        padding-top: 10px;
+        padding-left: 5px;
+        margin-left: 3%;
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Book';
+        outline: none;
+    }
+    #txtData{
+        width: 90%;
+        height: 35px;
+        color: black;
+        padding-top: 10px;
+        padding-left: 5px;
+        margin-left: 3%;
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Book';
+        outline: none;
+    }
+    .dadosmedicos #gs{
+        width: 90%;
+        height: 35px;
+        color: black;
+        padding-left: 5px;
+        padding-top: 10px;
+        margin-left: 3%;
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Book';
+        outline: none;
+    }
+    .dadospessoais input[type="file"]{
+        margin-left: 3%;
+        width: 90%;
+        color: rgb(150, 0, 0);
+    }
+    .dadosacesso{
+        height: 90%;
+        width: 90%;
+        margin-top: 15%;
+        margin-left: 5%;
+        border: 1px solid rgb(192, 192, 192);
+        box-shadow: 0 0 1px 0 black;
+        background-color: white;
+    }
+    .dadosacesso input[type="file"]{
+        width: 90%;
+        color: rgb(150, 0, 0);
+    }
+    .dadosacesso p{
+        font-size: 15px;
+        color: black;
+        margin-top: 0;
+    }
+    .topo2{
+        height: 2%;
+        width: 90%;
+        margin-left: 5%;
+        bottom: 4%;
+        position: absolute;
+    }
+    .topo2 button{
+        position: absolute;
+        margin-left: 0%;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

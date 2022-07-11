@@ -1,0 +1,36 @@
+p{
+    font-size: 40px;
+    color: white;
+    z-index: 4;
+    text-align: justify;
+    
+}
+.cHome{
+    width: 80%;
+    height: 400px;
+    left: 10%;
+    top: 15%;
+    z-index: 4;
+    position: absolute; 
+    display: none;
+}
+.cHome button{
+    height: 50px;
+    width: 160px;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(150, 0, 0);
+    font-size: 20px;
+}
+#logbtn{
+    margin-left: 5%;
+}
+#regbtn{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.cHome button:hover{
+    background-color: rgb(194, 0, 0);
+}

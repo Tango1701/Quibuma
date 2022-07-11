@@ -1,0 +1,189 @@
+#account{
+    width: 90%;
+    height: 550px;
+    left: 4%;
+    top: 12%;
+    z-index: 4;
+    position: absolute; 
+    background-color: white;
+    display: none;
+    border-radius: 1%;
+    font-family: 'Franklin Gothic Book';
+}
+.topo{
+    height: 80px;
+    width: 100%;
+}
+.topo h3{
+    color: rgb(150, 0, 0);
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.topo p{
+    font-size: 20px;
+    margin-left: 3%;
+    color: black;
+}
+.baixo p{
+    font-size: 15px;
+    margin-left: 3%;
+    margin-right: 2%;
+    color: black;
+}
+.topo button{
+    background-color: rgb(150, 0, 0);
+    height: 35px;
+    width: 150px;
+    border: none;
+    outline: none;
+    margin-left: 83%;
+    margin-top: -60px;
+    color: white;
+    border-radius: 3%;
+    position: absolute;
+    text-align: center;
+}
+.baixo{
+    height: 450px;
+    width: 100%;
+    display: flex;
+}
+.dadospessoais{
+    height: 100%;
+    width: 30%;
+    margin-left: 3%;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 0 1px 0 black;
+}
+h4{
+    color: black;
+    margin: 3%;
+}
+#p1{
+    color: black; 
+    font-size: 18px;
+    margin-left: 3%;
+}
+.dadosmedicos{
+    height: 100%;
+    width: 30%;
+    margin-left: 1%;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 0 1px 0 black;
+}
+.dadosmedicos #pat{
+    width: 72%;
+    height: 25px;
+    color: black;
+    padding-top: 10px;
+    padding-left: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Book';
+    outline: none;
+}
+.dadosmedicos #gs{
+    width: 57%;
+    height: 25px;
+    color: black;
+    padding-left: 5px;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Book';
+    outline: none;
+}
+.dadosacesso{
+    height: 100%;
+    width: 30%;
+    margin-left: 1%;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 0 1px 0 black;
+}
+
+#form label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    pointer-events: none;
+}
+#form label::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgb(243, 87, 19);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+#content-name{
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+#form input:focus +#lbl-name #content-name,
+#form input:valid + #lbl-name #content-name{
+    transform: translateY(-100%);
+    font-size: 15px;
+    color: rgb(150, 0, 0);
+}
+#lbl-name{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Book';
+}
+#form{
+    width: 90%;
+    height: 10%;
+    margin-left: 5%;
+    margin-top: 2%;
+    position: relative; 
+    overflow: hidden;
+}
+#form input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 10px;
+    border: none;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Book';
+    outline: none;
+}
+#form select{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Book';
+    outline: none;
+}
+#txtData{
+    width: 60%;
+    height: 25px;
+    color: black;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Book';
+    outline: none;
+}
+#richTextbox{
+    height: 110px;
+    width: 94%;
+    margin-left: 3%;
+    outline: none;
+}

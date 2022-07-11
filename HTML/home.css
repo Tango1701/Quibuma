@@ -1,0 +1,102 @@
+body{
+    font-family: 'Segoe UI';
+}
+.fundo_mobile{
+    display: none;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+.brain{
+    position: absolute;
+    z-index: 6;
+    height: 20px;
+    width: 500px;
+    bottom: 20px;
+    left: 10px; 
+    color: white;
+    display: flex;    
+}
+.overlay1{
+    display: none;
+}
+.menu{
+    height: 30px;
+    width: 45%;
+    z-index: 6;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    width: 25%;
+    height: 100%;
+    border-radius: 5%;
+    outline: none;
+    border: none;
+    margin-right: 5px;
+    color: white;
+    background-color: rgb(150, 0, 0);
+    cursor: pointer;
+    padding-top: .5%;
+    padding-left: 1.5%;
+    text-align: left;
+}
+.menu li:hover{
+    background-color: rgb(194, 0, 0);
+}
+.menu .conta .submenu{
+    height: 100px;
+    width: 100%;
+    list-style: none;
+    margin-top: 3%;
+    padding: 0;
+    display: none;
+}
+.menu .conta:hover .submenu{
+  display: block;
+}
+.menu li .submenu li{
+    width: 100%;
+    height: 30%;
+    margin-top: 3px;
+    padding-left: 5%;
+}
+.menu li .i{
+    margin-left: 30%;
+}
+
+#conteudo{
+    width: 75%;
+    height: 500px;
+    left: 17%;
+    top: 20%;
+    z-index: 4;
+    position: absolute; 
+}
+#info{
+    width: 90%;
+    height: 550px;
+    left: 4%;
+    top: 12%;
+    z-index: 4;
+    position: absolute; 
+    background-color: white;
+    display: none;
+}
+#servicos{
+    width: 90%;
+    height: 550px;
+    left: 4%;
+    top: 12%;
+    z-index: 4;
+    position: absolute; 
+    background-color: green;
+    display: none;
+}
